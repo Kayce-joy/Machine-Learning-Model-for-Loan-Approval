@@ -1,6 +1,6 @@
 ![Approved](./approved.jpg)
 
-# FinTech Innovations — Automated Loan-Approval Risk Model
+# FinTech Innovations - Automated Loan-Approval Risk Model
 
 ## Project Overview
 FinTech Innovations evaluates consumer credit applications using manual underwriter review. This process is slow, inconsistent across reviewers, and opaque for compliance. This project builds a reproducible binary classification pipeline to predict loan default risk using only data available at application time across 20,000 historical records.
@@ -12,7 +12,7 @@ FinTech Innovations evaluates consumer credit applications using manual underwri
 
 ## Dataset Profile
 - **Dimensions:** 20,000 rows, 35 initial attributes
-- **Target:** LoanApproved ( ~65% Denied, ~35% Approved)
+- **Target:** LoanApproved ( 65% Denied, 35% Approved)
 - **Missing Values:** MaritalStatus (1331), EducationLevel (901), SavingsAccountBalance (572)
 - **Cleaning:** AnnualIncome stripped of $ and commas and cast to float. Leakage features removed prior to modeling.
 
