@@ -1,3 +1,5 @@
+![Approved](./approved.jpg)
+
 # FinTech Innovations — Automated Loan-Approval Risk Model
 
 ## Project Overview
