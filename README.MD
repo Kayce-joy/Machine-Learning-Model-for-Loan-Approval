@@ -14,13 +14,13 @@ FinTech Innovations evaluates consumer credit applications using manual underwri
 - **Dimensions:** 20,000 rows, 35 initial attributes
 - **Target:** LoanApproved ( ~65% Denied, ~35% Approved)
 - **Missing Values:** MaritalStatus (1331), EducationLevel (901), SavingsAccountBalance (572)
-- **Cleaning:** AnnualIncome stripped of $ and commas and cast to float. Leakage features removed prior to modeling: RiskScore, RiskScore2, InterestRate, InterestRate2.
+- **Cleaning:** AnnualIncome stripped of $ and commas and cast to float. Leakage features removed prior to modeling.
 
 ## Pipeline Architecture
 Unified `ColumnTransformer` inside 80/20 split to prevent leakage:
 - **Numerical:** Median imputation + StandardScaler
 - **Categorical:** Constant "Unknown" imputation + OneHotEncoder
-- **Ordinal:** Most frequent imputation + Ordered encoding (High School < Associate < Bachelor < Master < Doctorate)
+- **Ordinal:** Most frequent imputation + Ordered encoding
 
 ## Model Evaluation
 Five algorithms evaluated on isolated 20% test set using cross-validated pipelines.
